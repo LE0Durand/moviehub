@@ -1,38 +1,87 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 auto;
+  width: 95%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.movies--wrapper {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.skeleton {
+  background-color: rgba(0, 0, 0, 0.534);
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-card--skeleton {
+  height: 500px;
+  width: calc(100% / 3);
+  display: flex;
+  position: relative;
+  background-color: rgba(59, 59, 59, 0.589);
+}
+
+.movie__img--skeleton {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(104, 104, 104, 0.774);
+}
+
+.movie__title--skeleton {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 10%;
+  z-index: 2;
+  height: 20px;
+  background-color: rgba(104, 104, 104, 0.774);
+}
+
+.movie__rating--skeleton {
+  background-color: rgba(104, 104, 104, 0.774);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  border-radius: 50%;
 }
