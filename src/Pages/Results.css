@@ -28,3 +28,10 @@
 .results__header--select:hover {
   border-color: red;
 }
+
+.no-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

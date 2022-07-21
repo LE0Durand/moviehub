@@ -1,5 +1,6 @@
 .no-results {
   max-width: 500px;
+  height: calc(100vh - 280px);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -13,4 +14,14 @@
   color: white;
   font-size: 34px;
   text-align: center;
+}
+
+.no-results__img--wrapper {
+  width: 80%;
+  max-width: 300px;
+  padding-top: 100px;
+}
+
+.no-results__img {
+  object-fit: cover;
 }
